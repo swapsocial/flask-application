@@ -10,7 +10,7 @@ pipeline {
         ECS_TASK_DEFINITION = 'flask-app-task'  // Set your ECS task definition
         IMAGE_NAME = 'flask-hello-world'  // Docker image name
         DOCKERFILE_PATH = '.'  // Path to the Dockerfile (can be adjusted)
-        GITHUB_REPO = 'https://github.com/swapsocial/flask-app.git'  // GitHub repo URL
+        GITHUB_REPO = 'https://github.com/swapsocial/flask-application.git'  // GitHub repo URL
     }
 
     stages {
