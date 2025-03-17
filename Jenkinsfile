@@ -2,6 +2,8 @@ pipeline {
     agent any
 
     environment {
+        AWS_REGION = 'ap-south-1'
+        AWS_ACCOUNT_ID = '590183656038'
         AWS_ECR_REPO = 'flask-hello-world'  // Set your AWS ECR repository name
         ECS_CLUSTER = 'northstar-cluster'  // Set your ECS cluster name
         ECS_SERVICE = 'flask-app-service'  // Set your ECS service name
