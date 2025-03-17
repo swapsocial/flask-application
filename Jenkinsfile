@@ -14,13 +14,6 @@ pipeline {
     }
 
     stages {
-        stage('Clone Repository') {
-            steps {
-                // Clone the repository from GitHub
-                git branch: 'main', url: "${GITHUB_REPO}"
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 script {
