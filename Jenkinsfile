@@ -18,7 +18,7 @@ pipeline {
             steps {
                 script {
                     // Build the Docker image
-                    sh "docker build -t ${IMAGE_NAME} ${DOCKERFILE_PATH}"
+                    sh "ls -lart; pwd; docker build -t ${IMAGE_NAME} ${DOCKERFILE_PATH}"
                 }
             }
         }
